@@ -1,0 +1,12 @@
+div{
+	border: 1px solid black;
+	margin: 5px;
+	width: 100px;
+	height: 100px;
+	display: inline;
+}
+.first{
+	display: inline-block;
+	background-color: lightgreen;
+	
+}

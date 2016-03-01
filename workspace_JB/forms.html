@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>My site</title>
+		<link rel="stylesheet" href="styles/forms.css">
+	</head>
+
+
+	<body>
+		<form method="get">
+			<label>login:</label><input class="login" name="login" placeholder="username@email.com"/>
+			<label>password:</label><input name="pass" placeholder="password" type="password"/>
+
+			<input type="file"/>
+			<select name="movie">
+				<option value="value1">value1</option>
+				<option value="value2" selected>value2</option>
+				<option value="value3">value3</option>
+			</select>
+
+			<label>Male<input type="radio" name="gender" value="male"/></label>
+			<label>Female<input type="radio" name="gender" value="famale"/></label>
+<!--			<input type="radio"/>
+			<input type="radio"/>
+-->
+			<button type="submit">Login</button>
+		</form>
+<!--
+		<script>
+			var form = document.querySelector('form');
+			form.addEventListener('submit',validate);
+
+			function validate (e) {
+				// body...
+				var valid = false;
+
+				if (!valid) {
+					e.preventDefault();
+				};
+			}
+		</script>
+-->		
+	</body>
+</html>

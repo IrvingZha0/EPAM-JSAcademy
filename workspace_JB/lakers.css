@@ -1,0 +1,120 @@
+body{
+	background-color: lightgray;
+	display: inline-block;
+	margin-left: 25px;
+
+	
+}
+.top{
+	height: 100px;
+	width: 1300px;
+	float: left;
+}
+.bottom{
+	height: 500px;
+	width: 1300px;
+	float: left;
+}
+.top.top-left-part{
+	background-color: lightgreen;
+	height: 100px;
+	width: 150px;
+}
+.top.top-right-part{
+	background-color: blue;
+	height: 100px;
+	width: 1150px;
+}
+.bottom.bottom-left-part{
+	background-color: yellow;
+	height: 500px;
+	width: 800px;
+}
+.bottom.bottom-right-part{
+	background-color: green;
+	height: 500px;
+	width: 500px;
+}
+.lakers{
+
+}
+.lakers.to-la{
+	height: 250px;
+	width: 800px;
+	background-color: green;
+}
+.team{
+	float: left;
+}
+.team-left{
+	height: 250px;
+	width: 300px;
+	background-color: red;
+}
+.team-right{
+	height: 250px;
+	width: 500px;
+	background-color: pink;
+}
+.lakers.bot-la{
+	height: 250px;
+	width: 800px;
+}
+.teamintroduce{
+	font-family: cursive;
+}
+
+.know{
+	background-color: gray;
+	margin: 0 auto;
+	width: 500px;
+	height: 20px;	
+	font-size: 18px;
+	font-family: cursive;
+}
+
+.box{
+	background-color: lightblue;
+	margin: 0 auto;
+	width: 500px;
+	height: 300px;
+}
+.icon{
+	float: left;
+	width: 150px;
+	height: 150px;
+	margin: 10px;
+}
+.name{
+	margin-left: 10px;
+	font-size: 35px;
+	font-family: cursive;
+}
+.title{
+	font-size: 15px;
+	font-family: cursive;
+	color: darkblue;
+}
+.company{
+	margin-left: 10px;
+	float: right;
+	width: 115px;
+	height: 40px;
+	margin: 1px;
+	margin-top: 3px;
+}
+.empty{
+	height: 20px;
+	width: 300px;
+}
+.tel{
+	font-family: cursive;
+	margin-left: 50px;
+	height: 50px;
+	width: 400px;
+	/*text-align: center; 字体居中*/ 
+	}
+table, th, td {
+    border: 1px solid black;
+    background-color: #00FFFF;
+}

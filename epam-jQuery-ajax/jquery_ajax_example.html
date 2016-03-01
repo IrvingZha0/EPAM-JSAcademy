@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>AJAX Playground</title>
+    
+    <style>
+
+      body {
+        font-family: 'helvetica neue';
+      }
+
+      button {
+        font-size: 2em;
+        padding: 18px;
+        border: none;
+        border-radius: 6px;
+        color: #fff;
+        background-color: #522CBA;
+      }
+
+      section {
+        margin: 10px 0;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <button>Press Me</button>
+
+    <section />
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script>
+      $(function() {
+
+        $("button").click(function() {
+
+          $("section").html("<span>Hold on a moment...</span>");
+
+          var url = "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22nome%2C%20ak%22)&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys";
+
+          $.ajax({
+            method: "GET",
+            url: url,
+            success: function(data) {
+              debugger;
+
+              // TODO #1 - insert the weather forecast into section
+
+              // TODO #2 - provide a dropdown or input box that allows you to select a location (https://developer.yahoo.com/weather)
+
+              // TODO #3 (optional + advanced) - use the browser's location to determin the local weather
+
+            },
+            error: function(error) {
+              alert("Doh!");
+            }
+          })
+        });
+
+      });
+    </script>
+  </body>
+</html>

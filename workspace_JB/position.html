@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>My site</title>
+		<style>
+			body{
+				margin-left: 50px;
+			    margin-top: 50px;
+			    border: 1px solid black;
+			}
+
+			.wrapper{
+				height: 120px;
+			    margin-left: 50px;
+			    position: relative;
+
+			}
+
+			.wrapper > *{
+				height: 100px;
+				width: 100px;
+				border: 1px solid black;
+				display: inline-block;
+				background-color: white;
+			}
+
+			.victim{
+				background-image: url("c.png");
+				/*position: relative;*/
+				/*position: absolute;*/
+				position: fixed;
+				top: 20px;
+				left: 20px;
+				z-index: -2;/*在下方*/
+			}
+
+			.cellar{
+				height: 2000px;
+			}
+		</style>
+	</head>
+
+
+	<body>
+			<div class="wrapper">
+				<div></div>
+				<div class="victim"></div>
+				<div></div>
+			</div>
+			<div class="wrapper">
+				<div></div>
+				<div></div>
+			</div>
+			<div class="cellar">
+				<div></div>
+				<div></div>
+			</div>
+
+
+	</body>
+</html>

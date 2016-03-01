@@ -1,0 +1,30 @@
+body{
+	color:#99A0A7;
+	font-family: monaco, Consolas, 'Lucida Console', monospace;
+	background-color: #2B3031;
+}
+
+/*RGB #A71F32 stands for red for A7/green for 1F/blue for 32/*/
+/*color picker plaetton.com*/
+/*font picker http://www.cssfontstack.com/*/
+
+
+img {
+	border-radius: 5px;
+	width: 500px;
+	height: 500px;
+	margin-right: 50px;	
+	float: left;
+}
+
+li {
+	list-style-type:japanese-formal;
+}
+
+ul.newList {
+	list-style: none;
+}
+
+.newList li{
+	display: none;
+}

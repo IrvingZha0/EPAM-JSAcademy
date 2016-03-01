@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>My Calculator</title>
+		<link rel="stylesheet" href="styles/calculator.css">
+
+
+	</head>
+	<body>
+		<div class="Calculator">
+	    	<div class="CalculatorHead">
+	    	<div id="equals" class="Equation"></div>
+	        <div id="currNumber" class="CurrentNumber">0</div>
+	    	</div>
+	    	<div class="row">
+		        <button class="BiggestButton" onclick="clearNumbers();">AC</button>
+		        <button class="RightButton" onclick="setOperator('/');">/</button> 
+		                   
+		    </div>
+		    <div class="row">
+		        <button class="Button" onclick="numberClick(event);">7</button>
+		        <button class="Button" onclick="numberClick(event);">8</button>
+		        <button class="Button" onclick="numberClick(event);">9</button>   
+		        <button class="RightButton" onclick="setOperator('*');">*</button>   
+		        
+		    </div>
+		    <div class="row">
+		        <button class="Button" onclick="numberClick(event);">4</button>
+		        <button class="Button" onclick="numberClick(event);">5</button>
+		        <button class="Button" onclick="numberClick(event);">6</button> 
+		        <button class="RightButton" onclick="setOperator('-')">-</button>           
+		    </div>
+		    <div class="row">
+		        <button class="Button" onclick="numberClick(event);">1</button>
+		        <button class="Button" onclick="numberClick(event);">2</button>
+		        <button class="Button" onclick="numberClick(event);">3</button>
+		        <button class="RightButton" onclick="setOperator('+');">+</button>            
+		        
+		    </div>
+		    <div class="row">
+		        <button class="BigButton" onclick="numberClick(event);">0</button>
+		        <button class="Button" onclick="numberClick();">.</button>
+		        <button class="RightButton" onclick="setOperator('=');">=</button>
+		                    
+		    </div>
+</div>
+
+		<script type="text/javascript" src="src/calculator2.js"></script>
+
+
+	</body>
+</html> 

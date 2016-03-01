@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/callAPI.css" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>AJAX Playground</title>
+
+    <style>
+
+      body {
+        font-family: 'helvetica neue';
+      }
+
+      button {
+        font-size: 2em;
+        padding: 18px;
+        border: none;
+        border-radius: 6px;
+        color: #fff;
+        background-color: #522CBA;
+      }
+
+      section {
+        margin: 10px 0;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+
+
+
+    <section />
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+
+    <script>
+
+      $.ajax({
+          type: "POST",
+          url: "http://192.168.1.107:8080/articles",
+          data: {
+            username:"Irving",
+            _id: "2882828282828282828282",
+            date: "2016-02-28T15:56:50.606Z",
+            image: "http://thenextweb.com/wp-content/blogs.dir/1/files/2015/04/whatsapp.jpg",
+            url: "http://thenextweb.com/apps/2016/02/27/whatsapp-is-killing-support-for-blackberry-and-other-old-platforms/",
+            title: "from Irving",
+            __v: 0
+          },
+          success: function(data) {},
+
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+div{
+	border: 1px solid black;
+	margin: 5px;
+	float: left;
+}
+
+.box.first{
+	width: 500px;
+	height: 750px;	
+
+}
+
+.box.second{
+	width: 500px;
+	height: 300px;	
+	margin-left: left;
+	margin-right: auto;
+}
+
+.box > * {
+	floa
+	background-color: lightgreen;
+	width: 480px;
+	height: 200px;
+	margin-left: left;
+	margin-right: auto;
+	margin-top: top;
+	margin-bottom: auto;
+}
+
+.box.third{
+	margin-top: top;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: right;
+	width: 200px;
+	height: 500px;
+	background-color: lightblue;	
+
+}
+
+.second ~ *{
+	background-color: yellow;
+
+}

@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bootstrap Playground</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/navbar.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <!-- Static navbar -->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">jQuery Playground</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="bootstrap-css.html">jQuery API</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>jQuery Playground</h1>
+        <p>A place to begin getting familiar with jQuery... <span class="glyphicon glyphicon-thumbs-up"></span></p>
+        <p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Insertion Methods</h3>
+            </div>
+            <div class="panel-body">
+              <div id="prepend">
+                <blockquote>.prepend(content) some content to the following parpagraph</blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est veniam consequuntur distinctio necessitatibus sapiente illo, doloremque, iure atque officiis totam mollitia earum laudantium unde sequi fugit. Quibusdam assumenda, amet nobis?</p>
+                <button class="btn btn-primary">Prepend</button>
+              </div>
+              <hr>
+              <div id="before">
+                <blockquote>.before(content) - Insert content before all the following paragraphs</blockquote>
+                <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                <p>Aenean lacinia bibendum nulla sed consectetur.</p>
+                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                <button class="btn btn-primary">Before</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">CSS Manipulation</h3>
+            </div>
+            <div class="panel-body">
+              <div id="css1">
+                <blockquote>.css(propertyName, rule) - Changes the inline CSS values for all matched elements</blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est veniam consequuntur distinctio necessitatibus sapiente illo, doloremque, iure atque officiis totam mollitia earum laudantium unde sequi fugit. Quibusdam assumenda, amet nobis?</p>
+                <button class="btn btn-primary">Add CSS Property</button>
+              </div>
+              <hr>
+              <div id="css2">
+                <blockquote>.css({prop1: val1, prop2: val2}) - One argument: an object. Edit multiple properties at once</blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, earum eius quam soluta ipsam qui fugit. Natus soluta iure deserunt nobis, porro laborum molestiae labore, fugiat distinctio doloribus maxime dolorum.</p>
+                <button class="btn btn-primary">Add Multiple CSS Properties</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>      
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Attribute Manipulation</h3>
+            </div>
+            <div class="panel-body">
+              <div id="attr1">
+                <blockquote>.attr(attributeName) - Retrieves the attribute value of the first matched element</blockquote>
+                <p><a href="http://www.baidu.com">Visit Baidu</a></p>
+                <button class="btn btn-primary">Get the Attribute</button>
+              </div>
+              <hr>
+              <div id="attr2">
+                <blockquote>.attr(attributeName, newValue) - Changes the value of attributeName to newValue</blockquote>
+                <p><a href="http://www.baidu.com">Visit Google</a></p>
+                <button class="btn btn-primary">Update the Attribute</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>      
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Class Manipulation</h3>
+            </div>
+            <div class="panel-body">
+              <div id="class1">
+                <blockquote>.addClass(className) - Add a class ("bg-primary") onto all matched elements</blockquote>
+                <p>Donec sed odio dui.</p>
+                <button class="btn btn-primary">Add the Class</button>
+              </div>
+              <hr>
+              <div id="class2">
+                <blockquote>.hasClass(className) - Check to see if element below has the "lead" class applied to it.</blockquote>
+                <p class="lead">Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                <button class="btn btn-primary">Check for Class</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>   
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Forms</h3>
+            </div>
+            <div class="panel-body">
+              <div id="form1">
+                <blockquote>.val() - Returns the value of the “value” attribute.</blockquote>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                </div>
+                <button class="btn btn-primary">Log the value to the console</button>
+              </div>
+              <hr>
+              <div id="form2">
+                <blockquote>.val(valueToSet) - Set the value of the “value” attribute</blockquote>
+                <form class="form">
+                  <div class="form-group">
+                    <label for="exampleInputName2">Name</label>
+                    <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                  </div>
+                </form>
+                <button class="btn btn-primary">Set the value to your name</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>   
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Mouse Events</h3>
+            </div>
+            <div class="panel-body">
+              <div id="mouse">
+                <blockquote>mousemove - User has moved the mouse over the element</blockquote>
+                <img src="images/mouse.png" class="img-responsive" style="width: 20%;"> 
+              </div>
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div>   
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Form Events</h3>
+            </div>
+            <div class="panel-body">
+              <div id="form">
+                <blockquote>submit, change, select, focus, blur</blockquote>
+                <p>Handle <strong>submit</strong> and a few other events on the form below...<br><br></p>
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> Remember me
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <button type="submit" class="btn btn-default">Sign In</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div>              
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

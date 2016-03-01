@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>My Bookstore</title>
+		<link rel="stylesheet" href="styles/mybookstore.css">
+
+
+	</head>
+	<body>
+		<div class="top"> My Bookstore</div>
+		<div class="bottom">
+			<div class="left-bottom">
+				<button class="left-btn" onclick="showPage()">Show Books</button>
+				<button class="left-btn" onclick="clearpage()">Close Bookstore</button>
+				<table>
+				<div class="left-unit">
+					<tr>
+						<td>Title:</td>
+						<td><input type="text" name="title" id="title" placeholder="title"/></td>
+					</tr>
+				</div>
+				<div class="left-unit">
+					<tr>
+						<td>Author:</td>
+						<td><input type="text" name="author" id="author" placeholder="author"/></td>
+					</tr>
+				</div>
+				<div class="left-unit">	
+					<tr>
+						<td>PageCount:</td>
+						<td><input type="text" name="pagecount" id="pagecount" placeholder="pagecount"/></td>
+					</tr>
+				</div>
+				<div class="left-unit">
+					<tr>
+						<td>Price:</td>
+						<td><input type="text" name="price" id="price" placeholder="Price $"/></td>
+					</tr>
+				</div>
+				<div class="left-unit">
+					<tr>
+						<td>Image URL:</td>
+						<td><input type="text" name="img" id="img" placeholder="link of the image"/></td>
+					</tr>
+				</div>
+				</table>
+				
+				<button id="create-btn" class="create-btn" onclick="createNewBook()">Create</button>
+				<button id="update-btn" class="update-btn" onclick="update()">Update</button>
+				<div class="left-unit">
+				<tr>
+				<td><input type="text" name="search" id="search" placeholder="search by title or author"/></td>
+				<td><button id="search-btn" class="search-btn" onclick="search()">Search</button></td>
+				</tr>
+				</div>			
+			</div>
+			<div class="right-bottom" id="right-bottom">
+				<!-- <div class="each" id="each">
+					<div class="image" id="eachimage"></div>
+					<div class="title" id="eachtitle"></div>
+					<div class="author" id="eachauthor"></div>
+					<div class="pagecount" id="eachpagecount"></div>
+					<div class="price" id="eachprice"></div>
+
+				</div> -->
+
+				</div>
+
+
+		</div>
+		<script type="text/javascript" src="src/mybookstore.js"></script>
+
+
+	</body>
+</html> 

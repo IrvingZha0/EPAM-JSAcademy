@@ -1,0 +1,41 @@
+
+body{
+	font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+	margin: 0;
+}
+nav{
+	background-color: #e67e22;
+	height: 50px;
+	width: 1300px;
+}
+
+span{
+	margin-left: 5px;
+	display: inline-block;
+	line-height: 50px;
+	color: white;
+}
+.logo{
+	font-size: 28px;
+	padding: 0 40px;
+}
+article {
+	display: none;
+}
+.button{
+	background-color: plum;
+    margin: 45px;
+    font-size: 20px;
+    font-family: cursive;
+    border: 3px;
+}
+
+/* .unit{
+	font-size: 20px;
+	padding: 0 10px;
+}
+
+.unit:hover{
+	cursor: pointer;
+	color: grey;
+} */
